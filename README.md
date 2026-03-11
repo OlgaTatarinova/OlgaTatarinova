@@ -7,6 +7,7 @@
 *Building the infrastructure that turns raw events into business intelligence*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/olgatatarinova/)
+[![Email](https://img.shields.io/badge/Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:olga.tatarinova.work@gmail.com)
 [![Location](https://img.shields.io/badge/📍_Nha_Trang,_Vietnam-gray?style=for-the-badge)](https://github.com/OlgaTatarinova)
 
 </div>
@@ -32,8 +33,9 @@ PostgreSQL → Debezium CDC → Kafka → Flink → Delta Lake → dbt → Click
     <td valign="top" width="33%">
 
 **Streaming & Messaging**
-- Apache Kafka · MSK
+- Apache Kafka
 - Apache Flink (exactly-once)
+- Apache Spark (PySpark)
 - Debezium CDC
 - Avro + Schema Registry
 
@@ -43,15 +45,15 @@ PostgreSQL → Debezium CDC → Kafka → Flink → Delta Lake → dbt → Click
 **Storage & Processing**
 - ClickHouse (OLAP)
 - Delta Lake / Apache Iceberg
-- Apache Spark
-- PostgreSQL
+- PostgreSQL · Greenplum
+- AWS Redshift
 
     </td>
     <td valign="top" width="33%">
 
 **Transformation & Orchestration**
 - dbt Core (Silver/Gold layers)
-- Apache Airflow · MWAA
+- Apache Airflow (40+ DAGs)
 - Great Expectations
 - DataHub (data lineage)
 
@@ -61,28 +63,41 @@ PostgreSQL → Debezium CDC → Kafka → Flink → Delta Lake → dbt → Click
     <td valign="top">
 
 **Cloud & Infrastructure**
-- AWS (S3, Kinesis, Glue, SageMaker)
+- AWS (S3, Lambda, EC2, Redshift, Kinesis, Glue, SageMaker)
 - Yandex Cloud
-- Docker · Kubernetes
-- Terraform
+- Docker · Kubernetes · Terraform
+- GitLab CI/CD
 
     </td>
     <td valign="top">
 
 **Observability**
 - Prometheus · Grafana
+- Alertmanager (P0/P1/P2)
 - Loki · Promtail
-- Alertmanager
-- OpenTelemetry
+- Superset · Redash · DataLens
 
     </td>
     <td valign="top">
 
-**MLOps**
-- MLflow · SageMaker
-- Feature Store
-- Model Monitor
-- XGBoost · LightGBM
+**Languages**
+- SQL (advanced)
+- Python
+- English — fluent
+- Chinese — conversational
+- Russian — native
+
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" colspan="3">
+
+**AI-Augmented Development**
+- Claude API · OpenAI API · LLM API integration
+- Prompt Engineering (chain-of-thought, structured outputs, tool use)
+- Claude Code (agentic coding workflows)
+- AI-assisted code review, SQL generation, documentation
+- LLM-powered data pipeline automation
 
     </td>
   </tr>
@@ -126,16 +141,32 @@ A 12-week portfolio project targeting **AWS Data Engineer Associate** certificat
 
 ## Professional Experience Highlights
 
-**Wildberries** · Senior Data Engineer *(current)*
-- Built ClickHouse analytics for sorting center performance metrics — 226 objects across 20 database schemas
-- Designed Kafka/Flink streaming pipeline processing **700M+ events/hour**
-- Led migration from legacy ClickHouse cluster to new 3-node architecture with zero downtime
-- Debugged production MV (materialized view) bugs in distributed ClickHouse cluster
+**Wildberries** · Senior Data Engineer / Tech Lead *(Dec 2025 — present)*
+- Designed a **6-layer hybrid Kappa architecture** (Ingestion → Staging → Entities → Speed → Batch → Serving) processing **700M+ events/hour** from Kafka
+- Built sharded ClickHouse cluster: sipHash64 partitioning, Buffer Engine for compaction, ReplicatedReplacingMergeTree for entity tracking
+- Introduced Entities layer consolidating status lifecycles across **1.2B+ rows**, eliminating full-scans and enabling lineage tracking
+- Optimized dashboards: pre-aggregated Serving layer reduced scan volume from **1.2M rows → 1,000 (~1000x speedup)**
+- Implemented Rolling Backfill with 8-day recalculation window — 100% accuracy under delays up to 186 hours
+- Led team of 3 engineers: code review, branching strategy, CI/CD (trunk-based Git)
+- Analyzed 130,000+ lines of SQL across 4 business domains, 60+ dashboards, 20+ materialized views
 
-**CandyCat** · Data Engineer / Product Analyst
-- A/B testing infrastructure → AOV **+8.94%**
-- RFM segmentation → CAC **-2.73%**
-- ARIMA demand forecasting, reducing overstock by ~15%
+**Wildberries** · Senior Data Engineer *(Apr 2024 — Dec 2025)*
+- Built Medallion architecture (Bronze/Silver/Gold) from scratch on ClickHouse — first structured data platform for the team
+- Designed Data Mesh across 5 products: each department as an independent data domain owner
+- Deployed alerting for Kafka, ClickHouse, Airflow with 3-tier escalation (P0/P1/P2)
+- **Doubled warehouse processing speed**, reduced inventory losses by **80%**
+
+**CandyCat** · Senior Data Engineer *(Aug 2023 — Jun 2024)*
+- Built real-time CDC pipeline: Debezium (PostgreSQL) → Kafka → Flink (streaming) + Spark (batch) — reduced data delivery latency **from 4 hours to 30 seconds**
+- Built Apache Iceberg lakehouse with ACID guarantees and schema evolution — **reduced storage costs by 35%** via compaction and partitioning
+- Orchestrated 40+ Airflow DAGs, dbt transformations, Terraform + Docker infrastructure
+- Implemented AWS analytics: S3 data lake, Lambda for event processing, EC2 for batch, Redshift for OLAP
+
+**Kata Academy** · Middle / Senior Data Engineer *(Feb 2022 — Aug 2023)*
+- Built analytics system from scratch: PostgreSQL schema (3NF) + ETL pipelines to ClickHouse
+- Created 50+ dashboards in DataLens and Superset for marketing and product teams
+- Automated reporting — **reduced manual work by 50%**, weekly report prep from **8 hours → 15 minutes**
+- Deployed and administered analytics infrastructure in Yandex Cloud
 
 ---
 
@@ -166,8 +197,8 @@ I'm actively looking for **remote Senior/Staff Data Engineer** roles at internat
 
 > **Interested in:** Tinybird · DoubleCloud · Altinity · adtech/fintech scale-ups
 
-[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/olga-tatarinova)
-[![Email](https://img.shields.io/badge/Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your@email.com)
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/olgatatarinova/)
+[![Email](https://img.shields.io/badge/Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:olga.tatarinova.work@gmail.com)
 
 ---
 
