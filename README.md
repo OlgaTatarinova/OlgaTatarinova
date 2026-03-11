@@ -179,16 +179,6 @@ A 12-week portfolio project targeting **AWS Data Engineer Associate** certificat
 
 ---
 
-## GitHub Stats
-
-<div align="center">
-
-![Olga's GitHub Stats](https://github-readme-stats.vercel.app/api?username=OlgaTatarinova&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=FF6B35&icon_color=FF6B35)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=OlgaTatarinova&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=FF6B35)
-
-</div>
-
 ---
 
 ## Let's Connect
