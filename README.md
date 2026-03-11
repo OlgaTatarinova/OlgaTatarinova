@@ -6,8 +6,7 @@
 
 *Building the infrastructure that turns raw events into business intelligence*
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/olga-tatarinova)
-[![Website](https://img.shields.io/badge/Website-FF6B35?style=for-the-badge&logo=firefox&logoColor=white)](https://olga.tatarinova/)
+[![LinkedIn](https://www.linkedin.com/in/olgatatarinova/)
 [![Location](https://img.shields.io/badge/📍_Nha_Trang,_Vietnam-gray?style=for-the-badge)](https://github.com/OlgaTatarinova)
 
 </div>
