@@ -148,7 +148,7 @@ A 12-week portfolio project targeting **AWS Data Engineer Associate** certificat
 - Optimized dashboards: pre-aggregated Serving layer reduced scan volume from **1.2M rows → 1,000 (~1000x speedup)**
 - Implemented Rolling Backfill with 8-day recalculation window — 100% accuracy under delays up to 186 hours
 - Led team of 3 engineers: code review, branching strategy, CI/CD (trunk-based Git)
-- Analyzed 130,000+ lines of SQL across 4 business domains, 60+ dashboards, 20+ materialized views
+- Analyzed 13,000+ lines of SQL across 4 business domains, 60+ dashboards, 20+ materialized views
 
 **Wildberries** · Senior Data Engineer *(Apr 2024 — Dec 2025)*
 - Built Medallion architecture (Bronze/Silver/Gold) from scratch on ClickHouse — first structured data platform for the team
